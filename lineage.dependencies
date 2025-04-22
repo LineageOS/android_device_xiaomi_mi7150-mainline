@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_device_virt_virtio_arm64",
+    "target_path": "device/virt/virtio_arm64"
+  },
+  {
+    "repository": "android_prebuilts_bootmgr",
+    "target_path": "prebuilts/bootmgr"
+  }
+]
