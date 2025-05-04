@@ -14,7 +14,7 @@ AB_OTA_UPDATER := false
 # Boot parameters
 BOARD_BOOTCONFIG := \
     $(MAINLINE_COMMON_ANDROIDBOOT_PARAMS) \
-    androidboot.boot_devices=soc@0/1d84000.ufshc \
+    $(MAINLINE_QCOM_SOC_KERNEL_PARAMS) \
     androidboot.serialno=meow \
     androidboot.verifiedbootstate=orange
 
@@ -65,7 +65,6 @@ endif
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_USES_METADATA_PARTITION := true
 TARGET_COPY_OUT_VENDOR := vendor
 
