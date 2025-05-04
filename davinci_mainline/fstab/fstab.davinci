@@ -13,9 +13,6 @@
 # Misc
 /dev/block/by-name/misc /misc emmc defaults defaults
 
-# Recovery
-/dev/block/by-name/recovery /recovery emmc defaults defaults
-
 # System
 /dev/block/by-name/system /system ext4 noatime,ro first_stage_mount
 

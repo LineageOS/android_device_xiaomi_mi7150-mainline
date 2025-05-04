@@ -12,18 +12,23 @@ include device/mainline/qcom-common/BoardConfigMainlineQcomCommon.mk
 AB_OTA_UPDATER := false
 
 # Boot parameters
-BOARD_KERNEL_CMDLINE := \
+BOARD_BOOTCONFIG := \
     $(MAINLINE_COMMON_ANDROIDBOOT_PARAMS) \
-    $(MAINLINE_COMMON_KERNEL_PARAMS) \
-    $(MAINLINE_QCOM_KERNEL_PARAMS) \
     androidboot.boot_devices=soc@0/1d84000.ufshc \
     androidboot.serialno=meow \
-    androidboot.verifiedbootstate=orange \
+    androidboot.verifiedbootstate=orange
+
+BOARD_KERNEL_CMDLINE := \
+    $(MAINLINE_COMMON_KERNEL_PARAMS) \
+    $(MAINLINE_QCOM_KERNEL_PARAMS) \
     console=tty0
 
-BOARD_KERNEL_CMDLINE += \
-    androidboot.selinux=permissive \
-    audit=0
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += audit=0
+
+# Bootloader
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # Filesystem
 TARGET_USERIMAGES_USE_F2FS := true
@@ -46,6 +51,12 @@ TARGET_KERNEL_CONFIG_EXT := \
     kernel/mainline/configs/fragments/n/disable-clang-hardening-features.config \
     kernel/mainline/configs/fragments/n/faster-build-time.config
 
+ifeq ($(TARGET_DEVICE),davinci_mainline)
+TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-davinci
+else ifeq ($(TARGET_DEVICE),sweet_mainline)
+TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-sweet
+endif
+
 # Kernel modules
 #BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules.load))
 #BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules.load))
@@ -65,6 +76,11 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # Ramdisk
 BOARD_RAMDISK_USE_LZ4 := true
+
+# Recovery
+BOARD_INCLUDE_RECOVERY_RAMDISK_IN_VENDOR_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+TARGET_NO_RECOVERY := true
 
 # VINTF
 DEVICE_MANIFEST_FILE := \
