@@ -29,10 +29,10 @@ PRODUCT_COPY_FILES += \
     $(TARGET_DEVICE_PATH)/fstab/fstab.davinci:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.davinci \
     $(TARGET_DEVICE_PATH)/init/init.davinci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.davinci.rc
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(TARGET_DEVICE_PATH)/fstab/fstab.davinci:$(TARGET_COPY_OUT_RAMDISK)/fstab.davinci
-
 # Recovery
 PRODUCT_COPY_FILES += \
     $(TARGET_DEVICE_PATH)/init/init.recovery.davinci.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.davinci.rc
+
+# Vendor ramdisk
+PRODUCT_COPY_FILES += \
+    $(TARGET_DEVICE_PATH)/fstab/fstab.davinci:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.davinci
