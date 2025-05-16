@@ -22,7 +22,7 @@ TARGET_SCREEN_HEIGHT := 2340
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,external/firmware-xiaomi-davinci/lib/firmware/,$(TARGET_COPY_OUT_ODM)/firmware/)
+    vendor/xiaomi/davinci/proprietary/vendor/firmware/a615_zap.elf:$(TARGET_COPY_OUT_ODM)/firmware/qcom/sm7150/davinci/a615_zap.mbn
 
 # Init
 PRODUCT_COPY_FILES += \
