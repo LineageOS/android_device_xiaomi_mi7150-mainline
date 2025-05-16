@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5b6d64e_67c1d207",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-05-16T22:15:18Z",
+      "side": 1,
+      "message": "[   34.288380] modprobe: LoadWithAliases was unable to load /vendor/etc/modules.load.normal, tried: modules.load.normal",
+      "revId": "72ae3f182e38293fedc15efaaf41e86db0fd77f1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
