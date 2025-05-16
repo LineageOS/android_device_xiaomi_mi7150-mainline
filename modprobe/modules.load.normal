@@ -1,0 +1,14 @@
+# Bluetooth
+hci_uart
+
+# DSP
+fastrpc
+
+# Remoteproc
+qcom_q6v5_pas
+
+# Vibrator
+pm8xxx-vibrator
+
+# Wi-Fi
+ath10k_snoc
