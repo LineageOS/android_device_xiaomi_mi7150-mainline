@@ -1,0 +1,11 @@
+# Bluetooth
+hci_uart
+
+# Sound
+snd-soc-sm8250
+
+# Vibrator
+pm8xxx-vibrator
+
+# Wi-Fi
+ath10k_snoc
