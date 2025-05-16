@@ -1,0 +1,3 @@
+nvmem_qcom-spmi-sdam.ko
+qcom-spmi-adc5.ko
+qcom_qg.ko

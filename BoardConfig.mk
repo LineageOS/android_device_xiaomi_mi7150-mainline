@@ -59,9 +59,9 @@ TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-sweet
 endif
 
 # Kernel modules
-#BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules.load))
-#BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/configs/modules.load))
-#RECOVERY_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/configs/modules.include))
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.load))
+RECOVERY_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.include.recovery))
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
