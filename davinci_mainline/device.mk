@@ -22,7 +22,7 @@ TARGET_SCREEN_HEIGHT := 2340
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,external/firmware-xiaomi-davinci/lib/firmware/,$(TARGET_COPY_OUT_VENDOR)/firmware/)
+    $(call find-copy-subdir-files,*,external/firmware-xiaomi-davinci/lib/firmware/,$(TARGET_COPY_OUT_ODM)/firmware/)
 
 # Init
 PRODUCT_COPY_FILES += \
