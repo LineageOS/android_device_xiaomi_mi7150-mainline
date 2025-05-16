@@ -1,0 +1,3 @@
+# Backlight
+/sys/class/backlight/ae94000.dsi.0/brightness		0600	system	system
+/sys/class/backlight/ae94000.dsi.0/max_brightness	0600	system	system

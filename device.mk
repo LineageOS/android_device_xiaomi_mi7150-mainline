@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/init/init.mi7150.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi7150.rc
+    $(DEVICE_PATH)/init/init.mi7150.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi7150.rc \
+    $(DEVICE_PATH)/init/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc
 
 PRODUCT_PACKAGES += \
     kernel_mainline_configs_init_pristine-mainline-support
