@@ -5,6 +5,10 @@
 
 import /vendor/etc/init/hw/init.mainline.qcom.rc
 
+# Kernel module loading
+on early-boot
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -s -d /vendor/lib/modules --all=/vendor/etc/modules.load.normal
+
 # Mount
 on fs
     # Mount everything that does not require fsck

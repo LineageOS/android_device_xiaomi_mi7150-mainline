@@ -1,0 +1,8 @@
+# Bluetooth
+hci_uart
+
+# Vibrator
+pm8xxx-vibrator
+
+# Wi-Fi
+ath10k_snoc
