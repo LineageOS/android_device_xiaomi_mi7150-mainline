@@ -9,6 +9,7 @@ TARGET_DEVICE_PATH := device/xiaomi/mi7150-mainline/davinci_mainline
 ## SoC
 TARGET_QCOM_SOC := sm7150-aa
 ## TODO: Bringup the corresponding hardware and remove the following definitions
+TARGET_AUDIO_HAL := default-aidl
 TARGET_SUPPORTS_SUSPEND := false
 include device/mainline/qcom-common/optional/options.mk
 
