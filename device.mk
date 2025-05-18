@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init/init.mi7150.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi7150.rc
 
 PRODUCT_PACKAGES += \
-    kernel_mainline_configs_init_pristine-mainline-support
+    use_memfd.rc
 
 # Images
 PRODUCT_BUILD_BOOT_IMAGE := true
