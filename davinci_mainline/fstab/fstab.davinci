@@ -16,6 +16,9 @@
 # Misc
 /dev/block/by-name/misc /misc emmc defaults defaults
 
+# Persist
+/dev/block/by-name/persist /mnt/vendor/persist ext4 noatime,nosuid,nodev,barrier=1 defaults
+
 # Recovery
 /dev/block/by-name/recovery /recovery emmc defaults defaults
 
