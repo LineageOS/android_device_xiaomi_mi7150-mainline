@@ -10,6 +10,9 @@
 /dev/block/by-name/cache /cache ext4 nodev,noatime,nosuid,discard check,formattable
 /dev/block/by-name/cache /cache f2fs nodev,noatime,nosuid,discard check,formattable
 
+# DSP
+/dev/block/by-name/dsp /vendor/dsp ext4 ro,nosuid,nodev,barrier=1 defaults
+
 # Firmware
 /dev/block/by-name/modem /vendor/firmware_mnt vfat ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 defaults
 
