@@ -14,6 +14,11 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Dalvik heap
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Firmware
+PRODUCT_PACKAGES += \
+    firmware_qca_crbtfw21.tlv \
+    firmware_qca_crnv21.bin
+
 # HIDL
 PRODUCT_PACKAGES += \
     vndservicemanager
