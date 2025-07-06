@@ -10,6 +10,16 @@ on early-boot
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -s -d /vendor/lib/modules --all=/vendor/etc/modules.load.normal
     write /sys/class/remoteproc/remoteproc2/state start
 
+# Logging on cache
+service vendor.log_to_cache /system/bin/logcat -b all -f /cache/logs/log.txt
+    user system
+    group system log
+    disabled
+
+on post-fs
+    mkdir /cache/logs 0775 system log
+    start vendor.log_to_cache
+
 # Mount
 on fs
     # Mount everything that does not require fsck

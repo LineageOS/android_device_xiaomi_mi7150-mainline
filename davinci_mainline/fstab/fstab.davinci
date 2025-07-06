@@ -7,8 +7,8 @@
 /dev/block/by-name/boot /boot emmc defaults defaults
 
 # Cache
-/dev/block/by-name/cache /cache ext4 nodev,noatime,nosuid,discard check,formattable
-/dev/block/by-name/cache /cache f2fs nodev,noatime,nosuid,discard check,formattable
+/dev/block/by-name/cache /cache ext4 nodev,noatime,nosuid,discard,sync check,formattable
+/dev/block/by-name/cache /cache f2fs nodev,noatime,nosuid,discard,sync check,formattable
 
 # DSP
 /dev/block/by-name/dsp /vendor/dsp ext4 ro,nosuid,nodev,barrier=1 defaults
