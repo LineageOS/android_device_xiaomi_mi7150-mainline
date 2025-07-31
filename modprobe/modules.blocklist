@@ -1,0 +1,3 @@
+blocklist ipmi_msghandler.ko
+blocklist kunit-example-test.ko
+blocklist kunit-test.ko

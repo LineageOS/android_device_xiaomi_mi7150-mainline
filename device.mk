@@ -35,6 +35,9 @@ PRODUCT_BUILD_RAMDISK_IMAGE := true
 PRODUCT_BUILD_RECOVERY_IMAGE := true
 
 # Kernel
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/modprobe/modules.blocklist:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.blocklist
+
 PRODUCT_PACKAGES += \
     modules.load.normal
 
