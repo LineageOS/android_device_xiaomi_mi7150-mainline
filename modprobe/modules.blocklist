@@ -1,0 +1,4 @@
+blocklist ipmi_msghandler
+blocklist kunit-example-test
+blocklist kunit-test
+deferred msm

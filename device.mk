@@ -29,6 +29,7 @@ PRODUCT_BUILD_RECOVERY_IMAGE := true
 
 # Kernel
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/modprobe/modules.blocklist:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.blocklist \
     $(DEVICE_PATH)/modprobe/modules.load.normal:$(TARGET_COPY_OUT_VENDOR)/etc/modules.load.normal
 
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
