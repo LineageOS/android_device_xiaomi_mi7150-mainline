@@ -16,3 +16,9 @@ prebuilt_etc {
     sub_dir: "init",
     recovery: true,
 }
+
+prebuilt_etc {
+    name: "ueventd.mi7150.rc",
+    src: "ueventd.mi7150.rc",
+    vendor: true,
+}

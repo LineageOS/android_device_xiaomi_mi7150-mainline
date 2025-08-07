@@ -48,4 +48,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.davinci \
     fstab.davinci.vendor_ramdisk \
-    init.davinci.rc
+    init.davinci.rc \
+    ueventd.davinci.rc
