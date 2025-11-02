@@ -48,7 +48,7 @@ TARGET_KERNEL_CONFIG_EXT := \
     kernel/mainline/configs/fragments/android-base-pre/arm64.config \
     kernel/configs/b/android-6.12/android-base.config \
     kernel/mainline/configs/fragments/android-base-conditional/CONFIG_ARM64-y.config \
-    kernel/mainline/configs/fragments/y/common.config \
+    kernel/mainline/configs/fragments/common.config \
     kernel/mainline/configs/fragments/y/fbcon.config \
     kernel/mainline/configs/fragments/n/disable-clang-hardening-features.config \
     kernel/mainline/configs/fragments/n/faster-build-time.config
