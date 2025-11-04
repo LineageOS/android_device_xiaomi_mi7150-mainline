@@ -21,6 +21,7 @@ BOARD_BOOTCONFIG := \
 BOARD_KERNEL_CMDLINE := \
     $(MAINLINE_COMMON_KERNEL_PARAMS) \
     $(MAINLINE_QCOM_KERNEL_PARAMS) \
+    bootconfig \
     console=tty0
 
 BOARD_BOOTCONFIG += androidboot.selinux=permissive
