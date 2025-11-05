@@ -34,6 +34,24 @@
       "parentUuid": "4da3bf1f_c663f306",
       "revId": "ea22fd6e36154f0ee4547de6c9b58eb16cb29723",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d5dc2dc_146022c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-11-05T18:25:37Z",
+      "side": 1,
+      "message": "Didn\u0027t notice this was already in common libinit, my bad\n\nI just would like to set props from standardized location by default, and that includes all DMI identifiers, since that\u0027s the expected behaviour from mainlined devices\n\nI truly believe common dmi/openfirmware props should be opt-out rather than opt-in, to match GNU/Linux distros behaviors",
+      "parentUuid": "ce91e0f5_f2f3bf9a",
+      "revId": "ea22fd6e36154f0ee4547de6c9b58eb16cb29723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
