@@ -17,7 +17,9 @@ TARGET_SCREEN_DENSITY := 440
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(TARGET_DEVICE_PATH)/misc/fastboot-info.txt
 
 # Kernel
-TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-davinci
+DAVINCI_MAINLINE_DTB_VARIANT ?= samsung
+$(warning DAVINCI_MAINLINE_DTB_VARIANT is set to $(DAVINCI_MAINLINE_DTB_VARIANT), make sure it matches with your device.)
+TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-davinci-$(DAVINCI_MAINLINE_DTB_VARIANT)
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := davinci_mainline,davinci,davinciin
