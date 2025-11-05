@@ -52,7 +52,8 @@ TARGET_KERNEL_CONFIG_EXT := \
     kernel/mainline/configs/fragments/common.config \
     kernel/mainline/configs/fragments/y/fbcon.config \
     kernel/mainline/configs/fragments/n/disable-clang-hardening-features.config \
-    kernel/mainline/configs/fragments/n/faster-build-time.config
+    kernel/mainline/configs/fragments/n/faster-build-time.config \
+    $(DEVICE_PATH)/kconfigs/builtin-fixup.config
 
 ifeq ($(TARGET_DEVICE),davinci_mainline)
 TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-davinci
