@@ -16,6 +16,24 @@
       "message": "This is a common sysfs node, can it be moved to common libinit?",
       "revId": "ea22fd6e36154f0ee4547de6c9b58eb16cb29723",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce91e0f5_f2f3bf9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-05T18:17:32Z",
+      "side": 1,
+      "message": "yeah that node is common, but here I want libinit to set only serialno\n\nor... do you mean moving these `constexpr char` to common?",
+      "parentUuid": "4da3bf1f_c663f306",
+      "revId": "ea22fd6e36154f0ee4547de6c9b58eb16cb29723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
