@@ -55,12 +55,6 @@ TARGET_KERNEL_CONFIG_EXT := \
     kernel/mainline/configs/fragments/n/faster-build-time.config \
     $(DEVICE_PATH)/kconfigs/builtin-fixup.config
 
-ifeq ($(TARGET_DEVICE),davinci_mainline)
-TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-davinci
-else ifeq ($(TARGET_DEVICE),sweet_mainline)
-TARGET_DTB_LIST_WILDCARD := qcom/sm7150-xiaomi-sweet
-endif
-
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := \
     $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.load.basic))
