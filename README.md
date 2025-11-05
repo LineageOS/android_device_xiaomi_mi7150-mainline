@@ -10,7 +10,7 @@
 
 | Path | Source |
 |------|--------|
-| kernel/xiaomi/mi7150-mainline | https://github.com/sm7150-mainline/linux (branch: `v6.16`) |
+| kernel/xiaomi/mi7150-mainline | https://github.com/sm7150-mainline/linux (branch: `v6.18`) |
 | vendor/xiaomi/davinci | https://wiki.lineageos.org/devices/davinci/build/variant1/#extract-proprietary-blobs |
 
 ## Kernel patches
