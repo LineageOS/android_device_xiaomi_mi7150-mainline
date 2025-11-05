@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4da3bf1f_c663f306",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-11-05T17:58:46Z",
+      "side": 1,
+      "message": "This is a common sysfs node, can it be moved to common libinit?",
+      "revId": "ea22fd6e36154f0ee4547de6c9b58eb16cb29723",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
