@@ -16,6 +16,24 @@
       "message": "Uh, using lk won\u0027t add panel name to cmdline?",
       "revId": "b441ef6cb54b398623348b945b2a82e82a1c2d37",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53fd084d_ca3e7a32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-11-05T18:22:50Z",
+      "side": 1,
+      "message": "what\n\nthis is SM8150 generation platform, which has QCOM EFI stack rather than lk\nlk2nd is also too legacy for that platform\n\nyeah, panel name is present on cmdline from QCOM bootloader, however I don\u0027t see a way to make use of it except hacking u-boot yet\n\nthe boot flow on this target is:\n\nQCOM bootloader -\u003e U-Boot (efi bootmeth) -\u003e GRUB EFI -\u003e Mainline Linux",
+      "parentUuid": "3df34b04_bac32efc",
+      "revId": "b441ef6cb54b398623348b945b2a82e82a1c2d37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
