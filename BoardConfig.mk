@@ -15,7 +15,6 @@ AB_OTA_UPDATER := false
 BOARD_BOOTCONFIG := \
     $(MAINLINE_COMMON_ANDROIDBOOT_PARAMS) \
     $(MAINLINE_QCOM_SOC_ANDROIDBOOT_PARAMS) \
-    androidboot.serialno=meow \
     androidboot.verifiedbootstate=orange
 
 BOARD_KERNEL_CMDLINE := \
