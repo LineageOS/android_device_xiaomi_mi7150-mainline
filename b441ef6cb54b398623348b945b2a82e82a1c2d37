@@ -34,6 +34,24 @@
       "parentUuid": "3df34b04_bac32efc",
       "revId": "b441ef6cb54b398623348b945b2a82e82a1c2d37",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5f98204_87b85cb9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2025-11-05T18:27:31Z",
+      "side": 1,
+      "message": "People booting GNU/Linux distros also have to select the proper dtb based on their panel? No auto-detection whatsoever?",
+      "parentUuid": "53fd084d_ca3e7a32",
+      "revId": "b441ef6cb54b398623348b945b2a82e82a1c2d37",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
