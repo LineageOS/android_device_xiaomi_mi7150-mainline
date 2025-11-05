@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "init_mi7150_mainline",
+    srcs: ["init_mi7150_mainline.cpp"],
+    defaults: ["init_mainline_common_defaults"],
+}
