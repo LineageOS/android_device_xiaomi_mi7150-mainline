@@ -1,10 +1,9 @@
 # Android device tree for Xiaomi devices with SM7150 SoC running mainline kernel
 
-## Additional files required to build
+## Before flashing the Android build
 
-| Path | Source |
-|------|--------|
-| device/xiaomi/mi7150-mainline/prebuilts/u-boot-sm7150-xiaomi-davinci.img | https://github.com/sm7150-mainline/u-boot/releases/download/2025-04-14/u-boot-sm7150-xiaomi-davinci-usb-peripheral.img |
+1. Erase dtbo partition: `fastboot erase dtbo`
+2. Flash the [appropriate U-Boot build](https://github.com/sm7150-mainline/u-boot/releases) to boot partition.
 
 ## Additional repositories required to build
 
