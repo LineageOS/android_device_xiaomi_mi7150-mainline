@@ -4,7 +4,7 @@
 #
 
 # Boot
-/dev/block/by-name/boot /boot emmc defaults defaults
+/dev/null /boot emmc defaults defaults
 
 # Cache
 /dev/block/by-name/cache /cache ext4 nodev,noatime,nosuid,discard check,formattable
