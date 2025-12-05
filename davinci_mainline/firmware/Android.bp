@@ -70,28 +70,28 @@ install_symlink {
     name: "symlink_firmware_davinci_adsp.mbn",
     device_specific: true,
     installed_location: "firmware/qcom/sm7150/xiaomi/davinci/adsp.mbn",
-    symlink_target: "/vendor/firmware_gen/adsp.mbn",
+    symlink_target: "/vendor/firmware_mnt/image/adsp.mdt",
 }
 
 install_symlink {
     name: "symlink_firmware_davinci_cdsp.mbn",
     device_specific: true,
     installed_location: "firmware/qcom/sm7150/xiaomi/davinci/cdsp.mbn",
-    symlink_target: "/vendor/firmware_gen/cdsp.mbn",
+    symlink_target: "/vendor/firmware_mnt/image/cdsp.mdt",
 }
 
 install_symlink {
     name: "symlink_firmware_davinci_modem.mbn",
     device_specific: true,
     installed_location: "firmware/qcom/sm7150/xiaomi/davinci/modem.mbn",
-    symlink_target: "/vendor/firmware_gen/modem.mbn",
+    symlink_target: "/vendor/firmware_mnt/image/modem.mdt",
 }
 
 install_symlink {
     name: "symlink_firmware_davinci_venus.mbn",
     device_specific: true,
     installed_location: "firmware/qcom/sm7150/xiaomi/davinci/venus.mbn",
-    symlink_target: "/vendor/firmware_gen/venus.mbn",
+    symlink_target: "/vendor/firmware_mnt/image/venus.mdt",
 }
 
 genrule {
