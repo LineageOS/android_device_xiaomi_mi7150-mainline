@@ -25,6 +25,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,libinit,vendor_init_lib,//$(DEVICE_PATH):init_mi7150_mainline)
 
+PRODUCT_PACKAGES += \
+    use_memfd.rc
+
 # Images
 PRODUCT_BUILD_BOOT_IMAGE := true
 PRODUCT_BUILD_RAMDISK_IMAGE := true
