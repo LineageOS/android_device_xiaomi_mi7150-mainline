@@ -8,6 +8,10 @@ DEVICE_PATH := device/xiaomi/mi7150-mainline
 # Inherit from mainline/qcom-common
 $(call inherit-product, device/mainline/qcom-common/mainline_qcom-common.mk)
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    bdaddr
+
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
