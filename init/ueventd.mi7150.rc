@@ -4,3 +4,4 @@
 #
 
 firmware_directories /vendor/firmware_mnt/image/ /odm/firmware/
+modalias_handling enabled
