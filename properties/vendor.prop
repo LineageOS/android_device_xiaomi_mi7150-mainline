@@ -1,0 +1,4 @@
+# Remoteproc
+vendor.remoteproc.adsp.firmware=adsp.mdt
+vendor.remoteproc.cdsp.firmware=cdsp.mdt
+vendor.remoteproc.modem.firmware=modem.mdt

@@ -8,7 +8,6 @@ import /vendor/etc/init/hw/init.mainline.qcom.rc
 # Kernel module loading
 on late-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -s -d /vendor/lib/modules --all=/vendor/etc/modules.load.normal
-    write /sys/class/remoteproc/remoteproc2/state start
 
 # Mount
 on fs
@@ -18,3 +17,7 @@ on fs
 on late-fs
     # Mount RW partitions which need run fsck
     mount_all --late
+
+# Remoteproc
+on early-boot
+    trigger start_all_remoteproc
