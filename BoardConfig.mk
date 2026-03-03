@@ -71,6 +71,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Platform
 TARGET_BOARD_PLATFORM := mi7150
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
+
 # Ramdisk
 BOARD_RAMDISK_USE_LZ4 := true
 

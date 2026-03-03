@@ -18,3 +18,7 @@ on fs
 on late-fs
     # Mount RW partitions which need run fsck
     mount_all --late
+
+# Remoteproc
+on early-boot
+    trigger start_all_remoteproc
