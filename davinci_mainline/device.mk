@@ -19,6 +19,9 @@ $(call inherit-product, device/xiaomi/mi7150-mainline/device.mk)
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
+PRODUCT_COPY_FILES += \
+    $(TARGET_DEVICE_PATH)/audio/mixer_controls.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_controls.xml
+
 PRODUCT_PACKAGES += \
     audio.davinci_mainline.xml
 

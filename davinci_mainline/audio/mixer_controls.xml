@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mixerControls>
+    <init>
+        <set name="PRI_MI2S_RX Audio Mixer MultiMedia1" value="1"/>
+    </init>
+</mixerControls>
