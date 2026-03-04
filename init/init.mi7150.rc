@@ -5,6 +5,16 @@
 
 import /vendor/etc/init/hw/init.mainline.qcom.rc
 
+# Audio
+on load-bpf-programs
+    stop vendor.audio-hal-aidl
+    stop vendor.audio-effect-hal-aidl
+
+on boot
+    wait /dev/snd/controlC0
+    enable vendor.audio-hal-aidl
+    enable vendor.audio-effect-hal-aidl
+
 # Kernel module loading
 on post-fs
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -s -d /vendor/lib/modules --all=/vendor/etc/modules.load.normal
