@@ -14,6 +14,9 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Dalvik heap
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # HIDL
 PRODUCT_PACKAGES += \
     vndservicemanager
@@ -36,7 +39,7 @@ PRODUCT_BUILD_RECOVERY_IMAGE := true
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/modprobe/modules.blocklist:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.blocklist
+    $(DEVICE_PATH)/modprobe/modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.blocklist
 
 PRODUCT_PACKAGES += \
     modules.load.normal
