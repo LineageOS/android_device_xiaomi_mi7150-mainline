@@ -14,6 +14,9 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Dalvik heap
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # HIDL
 PRODUCT_PACKAGES += \
     vndservicemanager

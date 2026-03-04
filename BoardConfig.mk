@@ -68,6 +68,23 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USES_METADATA_PARTITION := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+DLKM_PARTITIONS := system_dlkm vendor_dlkm
+SSI_PARTITIONS := product system system_ext
+TREBLE_PARTITIONS := odm vendor
+ALL_PARTITIONS := $(DLKM_PARTITIONS) $(SSI_PARTITIONS) $(TREBLE_PARTITIONS)
+
+BOARD_SUPER_PARTITION_GROUPS := mi7150_mainline_dynpart
+BOARD_MI7150_MAINLINE_DYNPART_PARTITION_LIST := $(ALL_PARTITIONS)
+
+$(foreach p, $(DLKM_PARTITIONS), \
+    $(eval BOARD_USES_$(call to-upper, $(p))IMAGE := true))
+
+$(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
+    $(eval BOARD_$(p)IMAGE_EXTFS_INODE_COUNT := -1) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
+    $(eval BOARD_$(p)IMAGE_PARTITION_RESERVED_SIZE := 67108864) \
+    $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
