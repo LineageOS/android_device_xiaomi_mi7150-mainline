@@ -5,3 +5,4 @@ leds-qcom-lpg.ko
 qcom-rng.ko
 qcom-wdt.ko
 qcom_qg.ko
+qcom_smbx.ko

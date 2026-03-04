@@ -40,7 +40,6 @@ qcom_pd_mapper
 qcom_pil_info
 qcom_q6v5
 qcom_q6v5_pas
-qcom_smbx
 qcom_spmi_temp_alarm
 qcom_stats
 qcom_sysmon
