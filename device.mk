@@ -64,6 +64,3 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     kernel/mainline/configs
-
-# Inherit from vendor
-$(call inherit-product-if-exists, vendor/xiaomi/mi7150-mainline/mi7150-mainline-vendor.mk)
