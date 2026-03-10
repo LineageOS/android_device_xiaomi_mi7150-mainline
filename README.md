@@ -12,6 +12,10 @@
 | kernel/mainline/sm7150-mainline | https://github.com/sm7150-mainline/linux (branch: `v7.0`) |
 | vendor/xiaomi/davinci | https://wiki.lineageos.org/devices/davinci/build/variant1/#extract-proprietary-blobs |
 
+## Kernel edits
+
+- After applying kernel patches specified below, on `mm/Kconfig`, on config option `MEMFD_ASHMEM_SHIM`, remove the dependency on `ASHMEM_C`.
+
 ## Kernel patches
 
 | Commit name | Purpose | Source |
