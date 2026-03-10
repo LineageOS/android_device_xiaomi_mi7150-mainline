@@ -13,9 +13,6 @@ BOARD_KERNEL_CMDLINE += \
 # Display
 TARGET_SCREEN_DENSITY := 440
 
-# Fastboot
-TARGET_BOARD_FASTBOOT_INFO_FILE := $(TARGET_DEVICE_PATH)/misc/fastboot-info.txt
-
 # OTA
 TARGET_OTA_ASSERT_DEVICE := davinci_mainline,davinci,davinciin
 

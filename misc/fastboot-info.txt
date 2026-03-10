@@ -1,0 +1,19 @@
+# fastboot-info for mi7150-mainline
+version 1
+
+update-super
+
+flash cust
+
+flash system_dlkm
+flash vendor_dlkm
+
+flash product
+flash system
+flash system_ext
+flash odm
+flash vendor
+
+if-wipe erase cache
+if-wipe erase logdump
+if-wipe erase userdata
