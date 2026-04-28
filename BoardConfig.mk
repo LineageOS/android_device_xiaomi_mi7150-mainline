@@ -63,8 +63,9 @@ BOARD_VENDOR_KERNEL_MODULES_LOAD := \
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.load.basic))
 RECOVERY_KERNEL_MODULES := \
-    $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.include_dep.basic)) \
     $(strip $(shell cat $(DEVICE_PATH)/modprobe/modules.load.basic))
+
+TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS := true
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
