@@ -36,6 +36,7 @@ q6core
 q6routing
 qcom_common
 qcom_glink_smem
+qcom_pbs
 qcom_pd_mapper
 qcom_pil_info
 qcom_q6v5
@@ -43,6 +44,7 @@ qcom_q6v5_pas
 qcom_spmi_temp_alarm
 qcom_stats
 qcom_sysmon
+qcomtee
 qrtr_smd
 rfkill
 rpmsg_char
