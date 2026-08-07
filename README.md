@@ -9,8 +9,14 @@
 
 | Path | Source |
 |------|--------|
-| kernel/mainline/sm7150-mainline | https://github.com/sm7150-mainline/linux (branch: `v7.0`) |
+| kernel/mainline/sm7150-mainline | https://github.com/sm7150-mainline/linux (branch: `v7.2`) |
 | vendor/xiaomi/davinci | https://wiki.lineageos.org/devices/davinci/build/variant1/#extract-proprietary-blobs |
+
+## Android platform patches
+
+| Commit name | Purpose | Source |
+|-------------|---------|--------|
+| `jniClatCoordinator: Do not crash on BPF SELinux context mismatch` | Fixes booting on v7.2+ kernels | https://review.lineageos.org/c/LineageOS/android_packages_modules_Connectivity/+/494663 |
 
 ## Kernel edits
 
