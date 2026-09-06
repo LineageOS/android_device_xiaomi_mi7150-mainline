@@ -19,8 +19,7 @@ $(call inherit-product, device/xiaomi/mi7150-mainline/device.mk)
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
-PRODUCT_PACKAGES += \
-    audio.davinci_mainline.xml
+TARGET_AUDIO_MAINLINE_UCM_PROFILES := sm8250
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
