@@ -66,9 +66,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensor.proximity.prebuilt.xml
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 33
+TARGET_FOLLOWS_LATEST_SHIPPING_API_LEVEL := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     kernel/mainline/configs
+
+# VINTF
+TARGET_FOLLOWS_LATEST_VINTF_TARGET_LEVEL := true
