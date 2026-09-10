@@ -1,5 +1,9 @@
 # Android device tree for Xiaomi devices with SM7150 SoC running mainline kernel
 
+## Notes
+
+- Some ALSA UCM profiles in `ucm2/conf.d/sm8250` are NOT installed due to incompatibility with the build system; Please install these to the device manually. Otherwise, audio will not work, and may even lead to ADSP crash.
+
 ## Before flashing the Android build
 
 1. Erase dtbo partition: `fastboot erase dtbo`
